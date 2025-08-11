@@ -7,7 +7,7 @@ function App() {
     <>
     <div className="p-6 text-center">
       <Routes>
-        <Route path="/" element={<h1 className="text-5xl font-bold text-blue-500">Home Page</h1>} />
+        <Route path="/" element={<h1 className="text-8xl font-bold text-blue-500">Home Page</h1>} />
         <Route path="/about" element={<h1 className="text-2xl">About Page</h1>} />
       </Routes>
     </div>

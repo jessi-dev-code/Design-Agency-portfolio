@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --large-line-height : 150%;
+    --medium-line-height: 80;
+    --regular-line-height:24;
+    --label-line-height:20;
+    --title-line-height:28;
+    --heading-line-height:40;
+    --regular-label-line-height:16;
+    --letter-spacing : 8px;
+    --largedisplaysize : 128px;
+    --mediumdisplaysize:96px;
+    --regulardisplaysize:57px;
+    --extralarge-bodyfont:96px;
+    --large-bodyfont: 16px;
+    --medium-bodyfont : 14px;
+    --small-bodyfont: 12px;
+    --large-labelfont: 14px;
+    --medium-labelfont: 12px;
+    --small-labelfont: 11px;
+    --large-titlefont:22px;
+    --medium-titlefont:16px;
+    --small-titlefont:14px;
+    --large-headlinefont:32px;
+    --medium-headingfont:28px;
+    --small-headingfont:24px;
+    --background-color:#FFFBED;
+    --primary-color : #FF4200;
+    --secondary-blue: #50BBE9;
+    --secondary-yellow : #FFFE6D;
+    --secondary-pink: #FFB8D7;
+    --secondary-green : #7FE493;
+    --secondary-orange : #FFA239;
+    --primary-text-color: #795F32;
+    --secondary-text-color: #FFFBED;
+}
