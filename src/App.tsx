@@ -1,7 +1,7 @@
 import { Star } from "@mui/icons-material";
 import { Button } from "@mui/material";
 import { Routes, Route } from "react-router-dom";
-
+import "./App.css"
 function App() {
   return (
     <>
