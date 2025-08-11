@@ -16,7 +16,7 @@ function App() {
       <Button variant="contained" color="primary" startIcon={<Star />}>
         MUI Button
       </Button>
-    </div>
+    </div> 
     </>
   );
 }
