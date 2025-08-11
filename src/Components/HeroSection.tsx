@@ -27,8 +27,26 @@ const HeroSection = () => {
           </Typography>
         </motion.div>
       </Container>
-      <Container maxWidth={false} disableGutters className="flex justify-center items-center">
-        <Typography className="hero-superheading ">HOUSE OF DESIGN</Typography>
+      <Container maxWidth={false} disableGutters className="flex flex-row justify-center items-center gap-[30px] mx-auto w-full mt-[30px] flex-wrap">
+        <Box className="flex flex-row">
+        <Typography className="hero-superheading ">H</Typography>
+        <Typography className="hero-superheading ">O</Typography>
+        <Typography className="hero-superheading ">U</Typography>
+        <Typography className="hero-superheading ">S</Typography>
+        <Typography className="hero-superheading ">E</Typography>
+        </Box>
+        <Box className="flex flex-row">
+        <Typography className="hero-superheading ">O</Typography>
+        <Typography className="hero-superheading ">F</Typography>
+        </Box>
+        <Box className="flex flex-row">
+        <Typography className="hero-superheading ">D</Typography>
+        <Typography className="hero-superheading ">E</Typography>
+        <Typography className="hero-superheading ">S</Typography>
+        <Typography className="hero-superheading ">I</Typography>
+        <Typography className="hero-superheading ">G</Typography>
+        <Typography className="hero-superheading ">N</Typography>
+        </Box>
       </Container>
     </Container>
   )
