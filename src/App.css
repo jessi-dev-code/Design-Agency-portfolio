@@ -161,3 +161,6 @@ body{
 .HeroHeadingText:hover{
     color: var(--primary-color) !important;
 }
+::-webkit-scrollbar{
+    display: none;
+}

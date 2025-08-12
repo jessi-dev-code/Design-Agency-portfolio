@@ -1,20 +1,10 @@
 import { Box, Container, Typography } from "@mui/material"
 import { motion } from "motion/react"
-
-const marquee = {
-  animate: {
-    x: ["0%", "-100%"], // Move entire width
-    transition: {
-      x: {
-        repeat: Infinity,
-        repeatType: "loop",
-        duration: 10, // Slower for readability
-        ease: "linear",
-      },
-    },
-  },
-}
-
+import first from "../assets/image1.avif"
+import second from "../assets/image2.avif"
+import third from "../assets/image3.avif"
+import fourth from "../assets/image4.avif"
+import fifth from "../assets/image5.avif"
 
 const Marquee = () => {
     const text = ["CREATIVE WEB DESIGNING AGENCY", "JESSI"]
@@ -22,6 +12,7 @@ const Marquee = () => {
     const duplicate_text = [...text, ...text,...text, ...text,...text, ...text,...text, ...text]
   return (
     <>
+    <Container maxWidth={false} disableGutters className="relative mb-20">
     <Box
       sx={{
         overflow: "hidden",
@@ -103,6 +94,36 @@ const Marquee = () => {
         </motion.div>
       </Container>
     </Box>
+      <motion.div
+          initial={{ opacity: 0,}}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.64, ease: "easeInOut" }}
+        >
+        <Container className="!h-[78vh] flex items-center justify-start  absolute bottom-[-90%] left-[50%] -translate-x-[50%] overflow-hidden">
+        <Container className="!h-full flex flex-col items-center justify-start gap-[160px] w-[990px] overflow-scroll pt-[100px]">
+            <Box className="w-[990px] min-h-[533px] sticky top-0 rounded-xl" >  
+                <img src={first} className="border-[4px] border-black rounded-[32px]" />
+            </Box>
+            <Box className="w-[990px] min-h-[533px sticky top-0 rounded-xl rotate-[-2deg]">  
+                <img src={second}  className="border-[4px] border-black rounded-[32px]"/>
+            </Box>
+            <Box className="w-[990px] min-h-[533px]  sticky top-0 rounded-xl rotate-[-4deg]">  
+                <img src={third}  className="border-[4px] border-black rounded-[32px]"/>
+            </Box>
+            <Box className="w-[990px] min-h-[533px] sticky top-0 rounded-xl rotate-[-6deg]">  
+                <img src={fourth} className="border-[4px] border-black rounded-[32px]" />
+            </Box>
+            <Box className="w-[990px] min-h-[533px]  sticky top-0 rounded-xl rotate-[-8deg]">  
+                <img src={fifth} className="border-[4px] border-black rounded-[32px]" />
+            </Box>
+            <Box className="w-[990px] min-h-[533px] sticky top-0 rounded-xl rotate-[-10deg]">  
+                <img src={second}  className="border-[4px] border-black rounded-[32px]"/>
+            </Box>
+            <Box className="w-[990px] min-h-[533px] sticky top-0 rounded-xl rotate-[-8deg]"></Box>
+        </Container>
+    </Container>
+    </motion.div>
+    </Container>
     </>
   )
 }

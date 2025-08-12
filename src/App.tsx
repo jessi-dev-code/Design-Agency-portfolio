@@ -4,7 +4,6 @@ import Navsection from "./Components/Navsection";
 import HeroSection from "./Components/HeroSection";
 import Aboutus from "./Components/aboutus";
 import Marquee from "./Components/Marquee";
-// import ExitAnimation from "./Components/hide-show";
 function App() {
   return (
     <>
@@ -12,9 +11,9 @@ function App() {
     <Navsection />
     <HeroSection />
     <br />
-    {/* <ExitAnimation />  */}
     <Aboutus />
     <Marquee />
+    <Box className="w-[500px] h-[600px]"></Box>
     </Box>
     </>
   );
