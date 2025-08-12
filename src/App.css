@@ -79,7 +79,6 @@ body{
 .hero-section{
     background: url('./assets/background.webp') ;
     background-size:90%;
-    /* background-position: center; */
     background-position-x: center;
     background-repeat: no-repeat;
 }
@@ -96,6 +95,7 @@ body{
         line-height: 150% !important;
         font-size: var(--small-headingfont) !important;
         letter-spacing:  0px !important;
+        color: var(--primary-text-color) !important;
     }
     .hero-superheading{
         font-family: 'Cuanky' !important;
@@ -103,4 +103,61 @@ body{
     font-size: 190px !important;
     letter-spacing: 36px !important;
     line-height: 120% !important;
+}
+
+.aboutussection{
+    position: relative;
+    background-color: var(--secondary-yellow);
+}
+.waveimg{
+    position: absolute;
+    height: 560px;
+    top: 600px;
+    width: 100%;
+    background: url('./assets/wave.svg');
+    background-repeat: no-repeat;
+}
+.Orangebox{
+ background-color: var(--secondary-orange);
+}
+.bluebox{
+     background-color: var(--secondary-blue);
+}
+.pinkbox{
+ background-color: var(--secondary-pink);
+}
+.aboutus-heading{
+    font-size:48px !important;
+    color: var(--primary-color);
+    font-weight: 800 !important;
+    line-height: 1.15 !important;
+    letter-spacing: 0.025rem !important;
+    font-family: 'cat comic' !important;
+}
+.aboutus-heading span{
+    font-family: 'Cuanky' !important;
+    /* color: var(--secondary-pink); */
+    color: var(--primary-text-color) !important;
+    letter-spacing: 0.16rem;
+}
+.marquee-text{
+    color: var(--secondary-pink) !important;
+    letter-spacing: 0.85rem !important;
+    font-family: 'Cuanky' !important;
+}
+.marquee-text-2{
+    color: var(--secondary-orange) !important;
+    letter-spacing: 0.85rem !important;
+    font-family: 'Cuanky' !important;
+}
+.HeroHeadingText{
+    color: var(--secondary-pink);
+    font-size: 220px !important;
+    letter-spacing: 30px !important;
+    line-height: 120% !important;
+    font-family: 'Cuanky' !important;
+    transition: all 0.4s ease-in-out;
+}
+.HeroHeadingText:hover{
+    color: var(--primary-color) !important;
 }

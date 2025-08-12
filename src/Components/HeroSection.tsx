@@ -3,17 +3,17 @@ import { motion } from "framer-motion"
 
 const HeroSection = () => {
   return (
-    <Container maxWidth={false} disableGutters className="hero-section !h-[70vh]">
-      <Container className="text-center !h-[100%] flex flex-col items-center justify-center gap-[40px]">
+    <Container maxWidth={false} disableGutters className="hero-section h-[100vh] p-[20px] flex flex-col">
+      <Container className="flex flex-col items-center justify-center gap-[40px] text-center h-[80%]"> 
         <motion.div
           initial={{ opacity: 0, y: -140 }}
           whileInView={{ opacity: 1, y: 10 }}
           transition={{ duration: 1.4, ease: "easeInOut" }}
         >
-        <Typography className="hero-heading"> 
+        <Typography className="hero-heading "> 
           Where we build brands that bring you joy every morning
         </Typography>
-</motion.div>
+        </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 140 }}
           whileInView={{ opacity: 1, y: 10 }}
@@ -27,27 +27,27 @@ const HeroSection = () => {
           </Typography>
         </motion.div>
       </Container>
-      <Container maxWidth={false} disableGutters className="flex flex-row justify-center items-center gap-[30px] mx-auto w-full mt-[30px] flex-wrap">
-        <Box className="flex flex-row">
-        <Typography className="hero-superheading ">H</Typography>
-        <Typography className="hero-superheading ">O</Typography>
-        <Typography className="hero-superheading ">U</Typography>
-        <Typography className="hero-superheading ">S</Typography>
-        <Typography className="hero-superheading ">E</Typography>
-        </Box>
-        <Box className="flex flex-row">
-        <Typography className="hero-superheading ">O</Typography>
-        <Typography className="hero-superheading ">F</Typography>
-        </Box>
-        <Box className="flex flex-row">
-        <Typography className="hero-superheading ">D</Typography>
-        <Typography className="hero-superheading ">E</Typography>
-        <Typography className="hero-superheading ">S</Typography>
-        <Typography className="hero-superheading ">I</Typography>
-        <Typography className="hero-superheading ">G</Typography>
-        <Typography className="hero-superheading ">N</Typography>
-        </Box>
-      </Container>
+      <motion.div
+          initial={{ opacity: 0, y: 140 }}
+          whileInView={{ opacity: 1, y: 10 }}
+          transition={{ duration: 1.4, ease: "easeInOut" }}
+        className="flex justify-center mx-auto gap-[4px]">
+        <Box className="HeroHeadingText">H</Box>
+        <Box className="HeroHeadingText">O</Box>
+        <Box className="HeroHeadingText">U</Box>
+        <Box className="HeroHeadingText">S</Box>
+        <Box className="mr-[12px] HeroHeadingText">E</Box>
+        <div className="flex">
+        <Box className="HeroHeadingText">O</Box>
+        <Box className="HeroHeadingText">F</Box>
+        </div>
+        <Box className="ml-[12px] HeroHeadingText">D</Box>
+        <Box className="HeroHeadingText">E</Box>
+        <Box className="HeroHeadingText">S</Box>
+        <Box className="HeroHeadingText">I</Box>
+        <Box className="HeroHeadingText">G</Box>
+        <Box className="HeroHeadingText">N</Box>
+        </motion.div>
     </Container>
   )
 }
