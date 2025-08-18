@@ -38,7 +38,7 @@ const Navsection = () => {
                     animate={{ opacity: 1, scale: 1, visibility: 1, y:10 }}
                     exit={{ opacity: 0, scale: 0 ,y:-1000 }}
                     key="box"
-                    className="absolute top-[100px] left-0  flex justify-center items-center w-[100%] min-h-[100vh] rounded-xl navpage inset-6 border-4"
+                    className="absolute top-[100px] left-0 w-[100%] rounded-xl navpage border-4"
                     ><Navpage /></motion.div>
                 ) : null}
 
