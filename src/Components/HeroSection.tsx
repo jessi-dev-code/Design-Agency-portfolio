@@ -16,8 +16,8 @@ import Nhover from "../assets/Nhover.png"
 
 const HeroSection = () => {
   return (
-    <Container maxWidth={false} disableGutters className="hero-section h-[100vh] p-[20px] flex flex-col">
-      <Container className="flex flex-col items-center justify-center gap-[40px] text-center h-[80%]"> 
+    <Container maxWidth={false} disableGutters className="hero-section h-[96vh] p-[20px] flex flex-col">
+      <Container className="flex flex-col items-center justify-center gap-[40px] text-center md:w-full !w-[80%] h-[100%]"> 
         <motion.div
           initial={{ opacity: 0, y: -140 }}
           whileInView={{ opacity: 1, y: 10 }}
@@ -44,7 +44,9 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 140 }}
           whileInView={{ opacity: 1, y: 10 }}
           transition={{ duration: 1.4, ease: "easeInOut" }}
-        className="flex justify-center !mx-auto !ml-10 gap-[4px] overflow-x-hiddenx-hidden">
+        className="flex justify-center !mx-auto !ml-10 gap-[4px] overflow-x-hiddenx-hidden hover-heading"
+        
+        >
           <Box className="relative">
           <motion.img
           initial={{

@@ -13,7 +13,7 @@ function App() {
     <br />
     <Aboutus />
     <Marquee />
-    <Box className="w-[500px] h-[600px]"></Box>
+    {/* <Box className=" h-[600px]"></Box> */}
     </Box>
     </>
   );

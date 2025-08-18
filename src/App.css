@@ -79,8 +79,9 @@ body{
 .hero-section{
     background: url('./assets/background.webp') ;
     background-size:90%;
+    background-repeat: repeat-y;
     background-position-x: center;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
 }
 .hero-heading{
         font-family: 'Cuanky' !important;
@@ -89,15 +90,38 @@ body{
         letter-spacing: 2%;
         line-height: 80px !important;
     }
+    .hero-nav{
+    font-family: 'Cuanky' !important;
+    color: var(--primary-color);
+    font-size: var(--mediumdisplaysize) !important;
+    letter-spacing: 2%;
+    line-height: 80px !important;
+}
+.home{
+    color: var(--secondary-pink);
+}
+.projects{
+    color: var(--secondary-green);
+}
+.services{
+    color: var(--secondary-orange);
+}
+.contact{
+    color: var(--secondary-blue);
+}
+.mediumdisplay{
+    font-family: 'cat comic';
+    font-size: var(--large-headlinefont);
+}
+font-size:var(--medi)
     .hero-discription{
-        
         font-weight: 500 !important;
         line-height: 150% !important;
         font-size: var(--small-headingfont) !important;
         letter-spacing:  0px !important;
         color: var(--primary-text-color) !important;
     }
-    .hero-superheading{
+        .hero-superheading{
         font-family: 'Cuanky' !important;
         color: var(--secondary-pink) !important;
     font-size: 190px !important;
@@ -105,14 +129,51 @@ body{
     line-height: 120% !important;
 }
 
+@media(max-width:1020px){
+    .hero-section{
+        height: 80vh !important;
+    }
+    .hero-heading{
+        font-size: 60px !important;
+        line-height: 100% !important;
+    }
+        .hero-discription{
+            font-size: 18px !important;
+        }
+    }
+@media(max-width:760px){
+        .hero-section{
+        height: 60vh !important;
+    }
+    .hero-heading{
+        font-size: 32px !important;
+    }
+    .hero-discription{
+        font-size: 16px !important;
+    }
+}
+@media(max-width:425px){
+    .hero-section{
+    height: 30vh !important;
+    }
+
+    .hero-heading{
+        font-size: 22px !important;
+    }
+    .hero-discription{
+        font-size: 12px !important;
+    }
+}
+
+
 .aboutussection{
     position: relative;
     background-color: var(--secondary-yellow);
 }
 .waveimg{
     position: absolute;
-    height: 560px;
-    top: 600px;
+    min-height: 560px;
+    top: 98%;
     width: 100%;
     background: url('./assets/wave.svg');
     background-repeat: no-repeat;
@@ -133,6 +194,19 @@ body{
     line-height: 1.15 !important;
     letter-spacing: 0.025rem !important;
     font-family: 'cat comic' !important;
+}
+.hover-heading{
+    display: flex !important;
+}
+@media(max-width:900px) {
+    .aboutus-heading{
+        font-size: 30px !important;    
+    }
+}
+@media(max-width:1024px) {
+.hover-heading{
+    display: none !important;
+}
 }
 .aboutus-heading span{
     font-family: 'Cuanky' !important;
@@ -163,4 +237,7 @@ body{
 }
 ::-webkit-scrollbar{
     display: none;
+}
+.navpage{
+    background-color: var(--background-color);
 }

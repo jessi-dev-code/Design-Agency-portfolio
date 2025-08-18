@@ -12,13 +12,13 @@ const Marquee = () => {
     const duplicate_text = [...text, ...text,...text, ...text,...text, ...text,...text, ...text]
   return (
     <>
-    <Container maxWidth={false} disableGutters className="relative mb-20">
+    <Container maxWidth={false} disableGutters className="!h-[100vh] relative mb-20">
     <Box
       sx={{
         overflow: "hidden",
         whiteSpace: "nowrap",
         pt: 4,
-        mt:"300px"
+        mt:{xs:"100px", lg:"400px"}
       }}
     >
       <Container maxWidth={false} disableGutters>
@@ -33,7 +33,7 @@ const Marquee = () => {
                 x:{
                           repeat: Infinity,
         repeatType: "loop",
-        duration: 20, // Slower for readability
+        duration: 20,
         ease: "linear",  
                 }
             }
@@ -43,7 +43,7 @@ const Marquee = () => {
             <Typography
               key={index}
               sx={{
-                fontSize: { xs: "1rem", sm: "1.5rem", md: "8rem" },
+                fontSize: { xs: "2rem", sm: "4rem", md: "8rem" },
                 whiteSpace: "nowrap",
               }}
               className="marquee-text"
@@ -73,7 +73,7 @@ const Marquee = () => {
                 x:{
                           repeat: Infinity,
         repeatType: "loop",
-        duration: 40, // Slower for readability
+        duration: 20,
         ease: "linear",  
                 }
             }
@@ -83,7 +83,7 @@ const Marquee = () => {
             <Typography
               key={index}
               sx={{
-                fontSize: { xs: "1rem", sm: "1.5rem", md: "8rem" },
+                fontSize: { xs: "2rem", sm: "4rem", md: "8rem" },
                 whiteSpace: "nowrap",
               }}
               className="marquee-text-2"
@@ -99,29 +99,28 @@ const Marquee = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.64, ease: "easeInOut" }}
         >
-        <Container className="!h-[78vh] flex items-center justify-start  absolute bottom-[-90%] left-[50%] -translate-x-[50%] overflow-hidden">
-        <Container className="!h-full flex flex-col items-center justify-start gap-[160px] w-[990px] overflow-scroll pt-[100px]">
-            <Box className="w-[990px] min-h-[533px] sticky top-0 rounded-xl" >  
+          <Container maxWidth={false} disableGutters className="overflow-hidden h-[600px] md:h-[789px] absolute top-[5%]">
+        <Container maxWidth={false} disableGutters className="!h-full flex flex-col items-center justify-start gap-[2%] md:gap-[140px] overflow-scroll lg:pt-[60px] !pt-[120px] ">
+            <Box className="w-[400px] md:w-[990px] min-h-[533px] sticky top-0 rounded-xl" >  
                 <img src={first} className="border-[4px] border-black rounded-[32px]" />
             </Box>
-            <Box className="w-[990px] min-h-[533px sticky top-0 rounded-xl rotate-[-2deg]">  
+            <Box className="w-[400px] md:w-[990px] min-h-[533px] sticky top-0 rounded-xl rotate-[-2deg]">  
                 <img src={second}  className="border-[4px] border-black rounded-[32px]"/>
             </Box>
-            <Box className="w-[990px] min-h-[533px]  sticky top-0 rounded-xl rotate-[-4deg]">  
+            <Box className="w-[400px] md:w-[990px] min-h-[533px]  sticky top-0 rounded-xl rotate-[-4deg]">  
                 <img src={third}  className="border-[4px] border-black rounded-[32px]"/>
             </Box>
-            <Box className="w-[990px] min-h-[533px] sticky top-0 rounded-xl rotate-[-6deg]">  
+            <Box className="w-[400px] md:w-[990px] min-h-[533px] sticky top-0 rounded-xl rotate-[-6deg]">  
                 <img src={fourth} className="border-[4px] border-black rounded-[32px]" />
             </Box>
-            <Box className="w-[990px] min-h-[533px]  sticky top-0 rounded-xl rotate-[-8deg]">  
+            <Box className="w-[400px] md:w-[990px] min-h-[533px]  sticky top-0 rounded-xl rotate-[-8deg]">  
                 <img src={fifth} className="border-[4px] border-black rounded-[32px]" />
             </Box>
-            <Box className="w-[990px] min-h-[533px] sticky top-0 rounded-xl rotate-[-10deg]">  
+            <Box className="w-[400px] md:w-[990px] min-h-[533px] sticky top-0 rounded-xl rotate-[-10deg]">  
                 <img src={second}  className="border-[4px] border-black rounded-[32px]"/>
             </Box>
-            <Box className="w-[990px] min-h-[533px] sticky top-0 rounded-xl rotate-[-8deg]"></Box>
         </Container>
-    </Container>
+          </Container>
     </motion.div>
     </Container>
     </>

@@ -12,7 +12,7 @@ const Aboutus = () => {
           whileInView={{ opacity: 1, y: 8 }}
           transition={{ duration: 1.4, ease: "easeInOut" }}
         >
-    <Container maxWidth={false} disableGutters className="aboutussection !h-[70vh] relative">
+    <Container maxWidth={false} disableGutters className="aboutussection !min-h-[70vh] relative">
       <Container  maxWidth={false} disableGutters className="flex flex-col items-center justify-center">
         <motion.div
           initial={{ opacity: 1, y:-80 }}
@@ -21,13 +21,13 @@ const Aboutus = () => {
           <Box className="Orangebox !h-[68px] w-full"></Box>
           <Box className="bluebox !h-[58px] w-full"></Box>
           <Box className="pinkbox !h-[48px] w-full"></Box>
-          <Container maxWidth="xl" className="flex  pt-20 justify-between gap-[12%] ">
+          <Container maxWidth="xl" className="flex flex-col  sm:flex-row   pt-20 justify-between  !px-[40px] !md:px-0 gap-[20px]">
         <Box className="flex justify-center aboutus-heading">
           <Typography className="aboutus-heading">
              HOD isn't just a <span>nice-to-have</span>, it's how <span>your </span>brand comes alive .
              </Typography>
-           </Box>
-        <Box className="flex justify-start !items-start hero-discription mt-[40px]">I believe your brand should feel like that morning excitement of being in charge of your own day. Like those little moments of delight when you realize—yes, you really did build this. Like the quiet satisfaction of knowing what you do brings real joy and change to others.Like those little moments of delight when you realize—yes.
+          </Box>
+        <Box className="flex justify-start !items-start hero-discription lg:mt-[40px]">I believe your brand should feel like that morning excitement of being in charge of your own day. Like those little moments of delight when you realize—yes, you really did build this. Like the quiet satisfaction of knowing what you do brings real joy and change to others.Like those little moments of delight when you realize—yes.
         </Box>
           </Container>
           <Box className="flex  items-center justify-center w-full mt-2">
@@ -41,14 +41,17 @@ const Aboutus = () => {
             <motion.img
              whileInView={{rotate:360}}
              transition={{duration:1.5,ease:"anticipate",delay:1.2, repeat:1}}
+             className="!max-w-[60%] !md:w-full"
             src={shape1}/>
             <motion.img
              whileInView={{rotate:360}}
              transition={{duration:1.5,ease:"anticipate",delay:1.2 ,repeat:1}}
+             className="!max-w-[60%] !md:w-full"
             src={shape2}/>
             <motion.img
              whileInView={{rotate:360}}
              transition={{duration:1.5,ease:"anticipate",delay:1.2 ,repeat:1}}
+             className="!max-w-[60%] !md:w-full"
             src={shape3}/>
             </Box>
           </Box>
