@@ -28,7 +28,6 @@ const Navpage = () => {
     <img
      src={bigcircle}
      className='absolute bottom-32 -left-0 invisible md:visible'
-
     />
     </>
   )

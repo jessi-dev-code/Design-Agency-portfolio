@@ -108,7 +108,7 @@ body {
 }
 @media(max-width:500px){
     .hero-nav{
-        font-size: var(--large-headlinefont) !important;
+        font-size: var(--regulardisplaysize) !important;
         line-height: 1.1 !important;
     }
     
