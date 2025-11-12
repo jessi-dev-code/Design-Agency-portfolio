@@ -2,7 +2,7 @@ import { Box, Container, ListItem } from "@mui/material"
 import logo from "../assets/logo.svg"
 import { MoreVert } from "@mui/icons-material"
 import { motion,AnimatePresence } from "motion/react"
-import heart from "../assets/Ohover2.png"
+
 import { useState } from "react"
 import Navpage from "./Navpage"
 const Navsection = () => {
